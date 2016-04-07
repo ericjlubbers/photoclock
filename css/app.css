@@ -1,0 +1,113 @@
+/*AVAILABLE FONTS
+font-family: 'Source Serif Pro', serif;
+font-family: 'Source Sans Pro', serif;*/
+
+.clock {
+	font-family: 'Source Sans Pro', serif;
+	font-size: 15em;
+	font-weight: 700;
+	-webkit-text-stroke: 1px #2a2a2a;
+	color: #DCDA2E;
+	text-shadow:
+	2px 2px 0 #2a2a2a,
+	-1px -1px 0 #2a2a2a,  
+	1px -1px 0 #2a2a2a,
+	-1px 1px 0 #2a2a2a,
+	1px 1px 0 #2a2a2a;
+	text-align: center;
+	line-height: .6em;
+	margin:0;
+	padding:0;
+}
+
+.seconds {
+	font-size: .5em;
+}
+
+.day {
+	font-family: 'Source Sans Pro', serif;
+	font-size: 8em;
+	font-weight: 700;
+	-webkit-text-stroke: 1px #2a2a2a;
+	color: #DCDA2E;
+	text-transform: uppercase;
+	text-shadow:
+	2px 2px 0 #2a2a2a,
+	-1px -1px 0 #2a2a2a,  
+	1px -1px 0 #2a2a2a,
+	-1px 1px 0 #2a2a2a,
+	1px 1px 0 #2a2a2a;
+	text-align: center;
+	line-height: .6em;
+	margin:0;
+	padding:0;
+}
+
+.date {
+	font-family: 'Source Sans Pro', serif;
+	font-size: 5em;
+	font-weight: 700;
+	text-transform: uppercase;
+	-webkit-text-stroke: 1px #2a2a2a;
+	color: #DCDA2E;
+	text-shadow:
+	2px 2px 0 #2a2a2a,
+	-1px -1px 0 #2a2a2a,  
+	1px -1px 0 #2a2a2a,
+	-1px 1px 0 #2a2a2a,
+	1px 1px 0 #2a2a2a;
+	text-align: center;
+	line-height: .8em;
+	margin:0;
+	padding:0;
+}
+
+/*BACKGROUND IMAGES*/
+
+/* Basic background image styling. */
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+ 	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+ 	height: 100vh;
+	transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+	background-image: url('http://s169923.gridserver.com/images/dtlarooftop.jpg');	
+	z-index: -3;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url('http://s169923.gridserver.com/images/winterbarrel.jpg');
+	z-index: -2;
+	opacity: 0;
+}
+
+.third-image {
+	background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
+	z-index: -1;
+	opacity: 0;
+}
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
